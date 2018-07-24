@@ -1,0 +1,8 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/myhippoproject/hst:components/form:
+      jcr:primaryType: hst:component
+      hst:componentclassname: org.example.components.MyFormComponent
+      hst:parameternames: []
+      hst:parametervalues: []
+      hst:resourcetemplate: eforms-validation-default

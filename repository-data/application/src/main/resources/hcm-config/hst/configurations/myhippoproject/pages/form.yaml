@@ -1,0 +1,12 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/myhippoproject/hst:pages/form:
+      jcr:primaryType: hst:component
+      hst:referencecomponent: hst:abstractpages/base
+      /main:
+        jcr:primaryType: hst:component
+        hst:template: main-template
+        /content:
+          jcr:primaryType: hst:component
+          hst:referencecomponent: hst:components/form
+          hst:template: eforms-default

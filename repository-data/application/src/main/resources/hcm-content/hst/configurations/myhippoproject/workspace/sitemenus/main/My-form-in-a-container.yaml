@@ -1,0 +1,4 @@
+/hst:hst/hst:configurations/myhippoproject/hst:workspace/hst:sitemenus/main/My form in a container:
+  jcr:primaryType: hst:sitemenuitem
+  hst:referencesitemapitem: content
+  hst:repobased: false

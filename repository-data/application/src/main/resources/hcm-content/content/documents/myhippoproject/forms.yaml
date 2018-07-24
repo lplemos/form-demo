@@ -1,0 +1,340 @@
+/content/documents/myhippoproject/forms:
+  .meta:order-before: content
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: e28075a4-12a1-43cd-a0e5-e081ac9eb1ed
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: 815d706e-e19b-4acf-aa43-fe22133471d0
+  hippotranslation:locale: en
+  /test:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: d2714998-7df7-4f5f-95ce-9cf3bbb14a15
+    /test[1]:
+      jcr:primaryType: eforms:form
+      jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+      jcr:uuid: 9d1e29fd-3ef1-4e7e-9d81-579499041cc1
+      eforms:action: mail
+      eforms:actionurl: http://test.com/action.do
+      eforms:buttonlabel: Submit
+      eforms:formname: My Test
+      eforms:notificationemail: test@example.com
+      eforms:validationhelper: true
+      hippo:availability: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2018-07-24T12:16:58.949+02:00
+      hippostdpubwf:lastModificationDate: 2018-07-24T12:58:41.819+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 83d95606-2267-4687-b090-1bb9cae4541e
+      hippotranslation:locale: en
+      /page0:
+        jcr:primaryType: eforms:page
+        jcr:uuid: ce286c12-6ef7-40fc-9db7-640f6f2fff43
+        eforms:conditional: false
+        eforms:conditionnegate: false
+        eforms:label: Page 1
+        /field0:
+          jcr:primaryType: eforms:textfield
+          jcr:uuid: 7797e43a-68e4-471e-be02-dda1d85f6900
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:fieldid: idb77f1268f8f95205
+          eforms:fieldname: name
+          eforms:hint: Your name
+          eforms:label: Name
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+        /field1:
+          jcr:primaryType: eforms:radiogroup
+          jcr:uuid: c490d40c-9bef-4db8-bf58-7fcfb7fb16d2
+          eforms:allowother: false
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:displayvalues: ['Yes', 'No']
+          eforms:fieldid: id9fdac834f60aa229
+          eforms:fieldname: nextField
+          eforms:hint: Next field
+          eforms:label: Do you want to see the next field?
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+          eforms:values: ['yes', 'no']
+        /field3:
+          jcr:primaryType: eforms:textfield
+          jcr:uuid: 310ec4cb-7219-4207-8b82-29e72717740b
+          eforms:conditional: true
+          eforms:conditionfield: nextField
+          eforms:conditionnegate: false
+          eforms:conditionvalue: 'yes'
+          eforms:fieldid: id9377ddab55648e1f
+          eforms:fieldname: phone
+          eforms:hint: Your phone
+          eforms:label: Phone number
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+        /field2:
+          jcr:primaryType: eforms:radiogroup
+          jcr:uuid: d5032ae9-615b-4b02-995b-c7a7b44770d6
+          eforms:allowother: false
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:displayvalues: ['Yes', 'No']
+          eforms:fieldid: idae894af2a0987f4d
+          eforms:fieldname: nextPage
+          eforms:hint: Next page
+          eforms:label: Do you want to see the next page?
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+          eforms:values: ['yes', 'no']
+      /page1:
+        jcr:primaryType: eforms:page
+        jcr:uuid: 98f401d0-cba2-48c3-9da2-0ea454d2de9b
+        eforms:conditional: true
+        eforms:conditionfield: nextPage
+        eforms:conditionnegate: false
+        eforms:conditionvalue: 'yes'
+        eforms:label: Page 2
+        /field0:
+          jcr:primaryType: eforms:textfield
+          jcr:uuid: 2656d0f8-12b0-4f73-96cd-e4f9e9866225
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:expandhint: false
+          eforms:fieldid: ida06ac50f66832b2e
+          eforms:fieldname: email
+          eforms:hint: Your email
+          eforms:label: Email
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validationruleclass: com.onehippo.cms7.eforms.hst.validation.rules.EmailAddressRule
+          eforms:validationruleid: email
+          eforms:validationrulelabel: E-mail Address
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+    /test[2]:
+      jcr:primaryType: eforms:form
+      jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable', 'mix:versionable']
+      jcr:uuid: f31c9569-273d-49b9-b8cb-dc160a2ecf1f
+      eforms:action: mail
+      eforms:actionurl: http://test.com/action.do
+      eforms:buttonlabel: Submit
+      eforms:formname: My Test
+      eforms:notificationemail: test@example.com
+      eforms:validationhelper: true
+      hippo:availability: [preview]
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2018-07-24T12:16:58.949+02:00
+      hippostdpubwf:lastModificationDate: 2018-07-24T13:00:11.358+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 83d95606-2267-4687-b090-1bb9cae4541e
+      hippotranslation:locale: en
+      /page0:
+        jcr:primaryType: eforms:page
+        jcr:uuid: d12e0f15-8666-474f-a1e5-68534ab12939
+        eforms:conditional: false
+        eforms:conditionnegate: false
+        eforms:label: Page 1
+        /field0:
+          jcr:primaryType: eforms:textfield
+          jcr:uuid: edbab408-f1c1-46b6-993b-25141ec788c2
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:fieldid: idb77f1268f8f95205
+          eforms:fieldname: name
+          eforms:hint: Your name
+          eforms:label: Name
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+        /field1:
+          jcr:primaryType: eforms:radiogroup
+          jcr:uuid: ff57247a-8510-4229-b116-8900a858a7c0
+          eforms:allowother: false
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:displayvalues: ['Yes', 'No']
+          eforms:fieldid: id9fdac834f60aa229
+          eforms:fieldname: nextField
+          eforms:hint: Next field
+          eforms:label: Do you want to see the next field?
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+          eforms:values: ['yes', 'no']
+        /field3:
+          jcr:primaryType: eforms:textfield
+          jcr:uuid: baf1de71-7953-49d3-9807-6a14360d87b0
+          eforms:conditional: true
+          eforms:conditionfield: nextField
+          eforms:conditionnegate: false
+          eforms:conditionvalue: 'yes'
+          eforms:fieldid: id9377ddab55648e1f
+          eforms:fieldname: phone
+          eforms:hint: Your phone
+          eforms:label: Phone number
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+        /field2:
+          jcr:primaryType: eforms:radiogroup
+          jcr:uuid: 1d10bff8-d809-4319-9872-a6fb57db7c84
+          eforms:allowother: false
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:displayvalues: ['Yes', 'No']
+          eforms:fieldid: idae894af2a0987f4d
+          eforms:fieldname: nextPage
+          eforms:hint: Next page
+          eforms:label: Do you want to see the next page?
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+          eforms:values: ['yes', 'no']
+      /page1:
+        jcr:primaryType: eforms:page
+        jcr:uuid: c29ee2eb-11f8-4543-a16e-baae7c18a73f
+        eforms:conditional: true
+        eforms:conditionfield: nextPage
+        eforms:conditionnegate: false
+        eforms:conditionvalue: 'yes'
+        eforms:label: Page 2
+        /field0:
+          jcr:primaryType: eforms:textfield
+          jcr:uuid: 5d5eee10-2aac-4dca-80f1-8cff7a8ab66f
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:expandhint: false
+          eforms:fieldid: ida06ac50f66832b2e
+          eforms:fieldname: email
+          eforms:hint: Your email
+          eforms:label: Email
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validationruleclass: com.onehippo.cms7.eforms.hst.validation.rules.EmailAddressRule
+          eforms:validationruleid: email
+          eforms:validationrulelabel: E-mail Address
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+    /test[3]:
+      jcr:primaryType: eforms:form
+      jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+      jcr:uuid: b0849793-d240-4e5c-9ad8-0a42e3321217
+      eforms:action: mail
+      eforms:actionurl: http://test.com/action.do
+      eforms:buttonlabel: Submit
+      eforms:formname: My Test
+      eforms:notificationemail: test@example.com
+      eforms:validationhelper: true
+      hippo:availability: [live]
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2018-07-24T12:16:58.949+02:00
+      hippostdpubwf:lastModificationDate: 2018-07-24T13:00:11.358+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2018-07-24T13:00:13.904+02:00
+      hippotranslation:id: 83d95606-2267-4687-b090-1bb9cae4541e
+      hippotranslation:locale: en
+      /page0:
+        jcr:primaryType: eforms:page
+        jcr:uuid: df93a0b2-8eb9-4e3f-9251-0806692d59ee
+        eforms:conditional: false
+        eforms:conditionnegate: false
+        eforms:label: Page 1
+        /field0:
+          jcr:primaryType: eforms:textfield
+          jcr:uuid: 65dcbc46-6b5e-4298-9b26-63e043a3a324
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:fieldid: idb77f1268f8f95205
+          eforms:fieldname: name
+          eforms:hint: Your name
+          eforms:label: Name
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+        /field1:
+          jcr:primaryType: eforms:radiogroup
+          jcr:uuid: 7f6ca688-13ba-47c9-8cbe-2496a3042bb1
+          eforms:allowother: false
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:displayvalues: ['Yes', 'No']
+          eforms:fieldid: id9fdac834f60aa229
+          eforms:fieldname: nextField
+          eforms:hint: Next field
+          eforms:label: Do you want to see the next field?
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+          eforms:values: ['yes', 'no']
+        /field3:
+          jcr:primaryType: eforms:textfield
+          jcr:uuid: e05a4f52-9e95-47ef-9de2-b6d2f91d475c
+          eforms:conditional: true
+          eforms:conditionfield: nextField
+          eforms:conditionnegate: false
+          eforms:conditionvalue: 'yes'
+          eforms:fieldid: id9377ddab55648e1f
+          eforms:fieldname: phone
+          eforms:hint: Your phone
+          eforms:label: Phone number
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+        /field2:
+          jcr:primaryType: eforms:radiogroup
+          jcr:uuid: 76675dff-b89e-4aee-bce7-2186f7eed4a2
+          eforms:allowother: false
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:displayvalues: ['Yes', 'No']
+          eforms:fieldid: idae894af2a0987f4d
+          eforms:fieldname: nextPage
+          eforms:hint: Next page
+          eforms:label: Do you want to see the next page?
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''
+          eforms:values: ['yes', 'no']
+      /page1:
+        jcr:primaryType: eforms:page
+        jcr:uuid: 96681b5a-0a6e-4134-be02-d2ca689b3fe3
+        eforms:conditional: true
+        eforms:conditionfield: nextPage
+        eforms:conditionnegate: false
+        eforms:conditionvalue: 'yes'
+        eforms:label: Page 2
+        /field0:
+          jcr:primaryType: eforms:textfield
+          jcr:uuid: 2146303c-4f32-4c3b-9cf4-f1f1f21fd38e
+          eforms:conditional: false
+          eforms:conditionnegate: false
+          eforms:expandhint: false
+          eforms:fieldid: ida06ac50f66832b2e
+          eforms:fieldname: email
+          eforms:hint: Your email
+          eforms:label: Email
+          eforms:length: 40
+          eforms:mandatory: false
+          eforms:validationruleclass: com.onehippo.cms7.eforms.hst.validation.rules.EmailAddressRule
+          eforms:validationruleid: email
+          eforms:validationrulelabel: E-mail Address
+          eforms:validcasesensitive: 'false'
+          eforms:validexpression: ''

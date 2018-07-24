@@ -1,0 +1,5 @@
+/hst:hst/hst:configurations/myhippoproject/hst:workspace/hst:sitemenus/main/My form with a sitemap item:
+  .meta:order-before: My form in a container
+  jcr:primaryType: hst:sitemenuitem
+  hst:referencesitemapitem: form
+  hst:repobased: false

@@ -1,0 +1,4 @@
+/hst:hst/hst:configurations/myhippoproject/hst:workspace/hst:sitemenus/main/home:
+  .meta:order-before: My form with a sitemap item
+  jcr:primaryType: hst:sitemenuitem
+  hst:referencesitemapitem: root
